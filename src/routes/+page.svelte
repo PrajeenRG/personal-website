@@ -1,6 +1,37 @@
-<div class="flex-col justify-between p-8">
-	<h1 class="text-8xl font-bold text-blue-500">Welcome to SvelteKit</h1>
-	<p class="font-mono text-2xl text-gray-800">
-		Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-	</p>
+<script lang="js">
+	import DisplayPicture from '$lib/assets/display-picture.avif';
+</script>
+
+<svelte:head>
+	<title>Prajeen Govardhanam</title>
+</svelte:head>
+<div class="grid h-screen w-screen place-items-center bg-white dark:bg-stone-900">
+	<div class="flex flex-col place-items-center">
+		<img src={DisplayPicture} alt="Prajeen Govardhanam" class="h-64 rounded-full pb-4" />
+		<p class="name name-gradient text-transparent">Prajeen Govardhanam</p>
+		<p class="tagline text-stone-900 dark:text-stone-300">Committing Code and Spreading Memes</p>
+	</div>
 </div>
+
+<style lang="postcss">
+	.name {
+		@apply font-extrabold;
+		@apply text-5xl;
+		@apply leading-snug;
+		@apply text-center;
+	}
+
+	.tagline {
+		@apply font-mono;
+		@apply font-medium;
+		@apply text-xl;
+		@apply text-center;
+	}
+
+	.name-gradient {
+		@apply bg-gradient-to-bl;
+		@apply bg-clip-text;
+		@apply from-amber-500;
+		@apply to-rose-500;
+	}
+</style>
