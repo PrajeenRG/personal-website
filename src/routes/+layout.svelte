@@ -28,7 +28,7 @@
 
 <nav class="flex h-16 place-items-center justify-between bg-white px-16 dark:bg-stone-900">
 	<a href="/">
-		<img src={Logo} alt="Prajeen Govardhanam" class="h-8" />
+		<img src={Logo} alt="Prajeen Govardhanam" class="h-8 w-8" width="32px" height="32px" />
 	</a>
 	<div class="flex gap-4 text-sm font-semibold">
 		{#each navigations as { slug, name }}

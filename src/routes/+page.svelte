@@ -1,13 +1,14 @@
-<script lang="js">
-	import DisplayPicture from '$lib/assets/display-picture.avif';
-</script>
-
 <svelte:head>
 	<title>Prajeen Govardhanam</title>
 </svelte:head>
 <div class="grid h-screen w-screen place-items-center bg-white dark:bg-stone-900">
 	<div class="flex flex-col place-items-center">
-		<img src={DisplayPicture} alt="Prajeen Govardhanam" class="h-64 rounded-full pb-4" />
+		<enhanced:img
+			src="/src/lib/assets/display-picture.png"
+			alt="Prajeen Govardhanam"
+			class="h-64 w-64 rounded-full pb-4"
+			sizes="min(256px, 16rem)"
+		/>
 		<p class="name name-gradient text-transparent">Prajeen Govardhanam</p>
 		<p class="tagline text-stone-900 dark:text-stone-300">Committing Code and Spreading Memes</p>
 	</div>
