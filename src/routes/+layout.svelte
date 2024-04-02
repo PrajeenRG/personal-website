@@ -4,7 +4,6 @@
 	import '@fontsource-variable/jost';
 	import '@fontsource/jost';
 
-	import Logo from '$lib/assets/logo.svg';
 	import { page } from '$app/stores';
 
 	const navigations = [
@@ -29,7 +28,7 @@
 
 <nav class="flex h-16 place-items-center justify-between bg-white px-16 dark:bg-stone-900">
 	<a href="/">
-		<img src={Logo} alt="Prajeen Govardhanam" class="h-8 w-8" width="32px" height="32px" />
+		<enhanced:img src="/src/lib/assets/logo.png?w=128;64;32" alt="Prajeen Govardhanam" class="h-8 w-8" />
 	</a>
 	<div class="flex gap-4 text-sm font-semibold">
 		{#each navigations as { slug, name }}
