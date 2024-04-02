@@ -30,7 +30,7 @@
 	<a href="/">
 		<enhanced:img src="/src/lib/assets/logo.png?w=128;64;32" alt="Prajeen Govardhanam" class="h-8 w-8" />
 	</a>
-	<div class="flex gap-4 text-sm font-semibold">
+	<div class="flex gap-4 text-sm md:text-base font-semibold">
 		{#each navigations as { slug, name }}
 			<a
 				href={slug}
@@ -45,6 +45,6 @@
 <footer
 	class="flex flex-col place-items-center justify-evenly border-t-2 border-stone-200 bg-white px-8 py-2 text-stone-500 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-400"
 >
-	<p class="text-sm">© 2024 Prajeen Govardhanam</p>
-	<p class="text-xs">Powered by SvelteKit</p>
+	<p class="text-sm md:text-base">© 2024 Prajeen Govardhanam</p>
+	<p class="text-xs md:text-sm">Powered by SvelteKit</p>
 </footer>
