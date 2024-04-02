@@ -1,12 +1,12 @@
 <svelte:head>
 	<title>Prajeen Govardhanam</title>
 </svelte:head>
-<div class="grid h-screen w-screen place-items-center bg-white dark:bg-stone-900">
+<div class="grid w-screen h-[98vh] place-items-center bg-white dark:bg-stone-900">
 	<div class="flex flex-col place-items-center">
 		<enhanced:img
 			src="/src/lib/assets/display-picture.png"
 			alt="Prajeen Govardhanam"
-			class="h-64 w-64 rounded-full pb-4"
+			class="h-64 w-64 rounded-full mb-4"
 			sizes="min(256px, 16rem)"
 		/>
 		<p class="name name-gradient text-transparent">Prajeen Govardhanam</p>

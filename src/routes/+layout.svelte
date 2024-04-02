@@ -26,7 +26,7 @@
 	];
 </script>
 
-<nav class="flex h-16 place-items-center justify-between bg-white px-16 dark:bg-stone-900">
+<nav class="absolute top-0 z-50 flex h-16 w-screen place-items-center justify-between bg-white px-16 dark:bg-stone-900">
 	<a href="/">
 		<enhanced:img src="/src/lib/assets/logo.png?w=128;64;32" alt="Prajeen Govardhanam" class="h-8 w-8" />
 	</a>
