@@ -7,7 +7,7 @@ const config = {
 	theme: {
 		extend: {},
 		fontFamily: {
-			sans: ['Plus Jakarta Sans', ...ff.sans],
+			sans: ['Jost Variable', 'Jost', ...ff.sans],
 			mono: ['DM Mono', ...ff.mono]
 		}
 	},

@@ -16,7 +16,7 @@
 
 <style lang="postcss">
 	.name {
-		@apply font-extrabold;
+		@apply font-bold;
 		@apply text-5xl;
 		@apply leading-snug;
 		@apply text-center;

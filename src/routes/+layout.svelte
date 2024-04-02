@@ -1,7 +1,8 @@
 <script>
 	import '../app.pcss';
 	import '@fontsource/dm-mono';
-	import '@fontsource/plus-jakarta-sans';
+	import '@fontsource-variable/jost';
+	import '@fontsource/jost';
 
 	import Logo from '$lib/assets/logo.svg';
 	import { page } from '$app/stores';
