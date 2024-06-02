@@ -6,7 +6,7 @@
 		<enhanced:img
 			src="/src/lib/assets/prajeen.jpg?w=512;256;128"
 			alt="Prajeen Govardhanam"
-			class="mb-4 h-48 w-48 rounded-full border-4 border-orange-600 shadow-orange-800 shadow-sm md:shadow-md md:h-64 md:w-64"
+			class="mb-4 h-48 w-48 rounded-full border-4 border-orange-600 shadow-sm shadow-orange-800 md:h-64 md:w-64 md:shadow-md"
 		/>
 		<p class="name name-gradient text-3xl text-transparent md:text-5xl">Prajeen Govardhanam</p>
 		<p class="tagline text-lg text-stone-900 md:text-2xl dark:text-stone-300">
