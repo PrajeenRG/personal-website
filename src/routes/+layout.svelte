@@ -6,7 +6,7 @@
 
 <svelte:head>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
     rel="stylesheet"
@@ -24,6 +24,7 @@
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#work">Work</a>
+        <a href="/blog">Blog</a>
         <a
           href="https://github.com"
           class="border-2 border-black p-1 rounded transition-shadow shadow-xy-2 hover:shadow-xy-1"
