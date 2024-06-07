@@ -17,13 +17,13 @@
     <div
       class="mx-auto w-screen min-h-16 px-4 sm:px-8 lg:px-12 flex flex-row place-content-between place-items-center"
     >
-      <a href="#">
+      <a href="/">
         <p class="text-xl font-bold">Prajeen Govardhanam</p>
       </a>
       <div class="flex flex-row gap-6 font-semibold place-items-center">
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Work</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#work">Work</a>
         <a
           href="https://github.com"
           class="border-2 border-black p-1 rounded transition-shadow shadow-xy-2 hover:shadow-xy-1"
