@@ -12,15 +12,20 @@
 			quirky commits.
 		</p>
 	</div>
-	<div class="flex flex-row gap-6 text-center">
+	<div class="flex flex-row gap-6 text-center text-lg">
 		<a
 			class="rounded border-[3px] border-black shadow-xy-3 px-4 py-2 font-bold bg-yellow-400 transition-shadow hover:shadow-xy-1"
-			href="/resume.pdf"><span class="inline-block"><IconBrandGoogleDrive /></span>Check Resume</a
+			href="/resume.pdf"
+			><span class="flex flex-row gap-2 place-items-center justify-between"
+				><IconBrandGoogleDrive size={32} />Check Resume</span
+			></a
 		>
 		<a
 			class="rounded border-[3px] border-black shadow-xy-3 px-4 py-2 font-bold bg-red-400 transition-shadow hover:shadow-xy-1"
 			href="mailto:jdoe@example.com"
-			><span class="inline-block"><IconBrandGmail /></span>Send E-Mail</a
+			><span class="flex flex-row gap-2 place-items-center justify-between"
+				><IconBrandGmail size={32} />Send E-Mail</span
+			></a
 		>
 	</div>
 </div>
