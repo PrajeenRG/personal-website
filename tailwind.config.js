@@ -11,6 +11,7 @@ export default {
 			boxShadow: {
 				'xy-1': '0.125em 0.125em',
 				'xy-2': '0.25em 0.25em',
+				'xy-3': '0.375em 0.375em',
 				'xy-4': '0.5em 0.5em',
 				'xy-8': '1em 1em'
 			}
