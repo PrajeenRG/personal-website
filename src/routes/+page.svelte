@@ -1,6 +1,5 @@
 <script>
   import { IconBrandGoogleDrive, IconBrandGmail } from '@tabler/icons-svelte'
-  import picture from '$lib/assets/profile-picture.jpg'
 </script>
 
 <div
@@ -60,9 +59,10 @@
       quirky commit, or a spontaneous brainstorming session with my rubber duck.
     </p>
   </div>
-  <img
-    src={picture}
-    alt=""
+  <enhanced:img
+    src="/src/lib/assets/profile-picture.jpg?w=1536;960;540;384"
+    sizes="(min-width:3072px) 1536px, (min-width:1920px) 960px, (min-width:1080px) 540px, (min-width:768px) 384px"
+    alt="Prajeen's Profile Photo"
     class="aspect-square object-center border-4 border-black rounded-xl shadow-xy-4 my-4 md:my-6 lg:my-8"
   />
 </div>
