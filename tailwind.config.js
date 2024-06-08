@@ -1,11 +1,12 @@
-/** @type {import('tailwindcss').Config} */
 import { fontFamily as ff } from 'tailwindcss/defaultTheme'
 
+/** @type {import('tailwindcss').Config} */
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     fontFamily: {
       sans: ['Space Grotesk', ...ff.sans],
+      mono: ['Space Mono', ...ff.mono],
     },
     extend: {
       boxShadow: {

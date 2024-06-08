@@ -4,13 +4,13 @@
 
 <div
   id="hero"
-  class="flex flex-col h-[90vh] w-screen bg-lime-400 place-items-center justify-center p-4 md:p-8 lg:p-12"
+  class="flex flex-col h-[90vh] w-screen bg-white place-items-center justify-center p-4 md:p-8 lg:p-12"
 >
   <div class="text-center py-4 md:py-6 lg:py-8">
-    <h1 class="text-7xl font-bold p-2 mb-1">
+    <h1 class="text-7xl font-bold p-2 mb-2">
       Hey There! Step into my digital playground
     </h1>
-    <p class="text-3xl font-medium p-2 mt-1">
+    <p class="text-3xl font-mono font-medium p-2 mt-2">
       Juggling databases, APIs, and server-side scripts, I turn caffeine into
       scalable code and quirky commits.
     </p>
@@ -21,7 +21,7 @@
       href="/resume.pdf"
     >
       <span class="flex flex-row gap-2 place-items-center justify-between">
-        <IconBrandGoogleDrive size={32} />Check Resume
+        <IconBrandGoogleDrive size={32} />View Resume
       </span>
     </a>
     <a
@@ -36,23 +36,23 @@
 </div>
 <div
   id="about"
-  class="grid w-screen grid-rows-1 grid-cols-3 gap-12 bg-zinc-100 place-items-center p-6 md:p-12 lg:p-[4.5rem]"
+  class="grid w-screen grid-rows-1 grid-cols-3 gap-12 bg-white place-items-center p-6 md:p-12 lg:p-[4.5rem]"
 >
   <div class="h-full col-span-2 py-4 md:py-6 lg:py-8">
     <h1 class="text-5xl font-bold mb-2">About Me</h1>
-    <p class="text-xl font-medium pt-4 pb-2 pr-4">
+    <p class="font-mono text-xl font-medium pt-4 pb-2 pr-4">
       With over a year of industry experience and many many side projects later,
       I’ve found my groove in the backend, where the real magic happens. I’m all
       about creating robust solutions that not only work but also bring joy to
       those who use them.
     </p>
-    <p class="text-xl font-medium py-2 pr-4">
+    <p class="font-mono text-xl font-medium py-2 pr-4">
       My passion for software is as vast as the databases I manage. I believe in
       writing code that’s not just functional but also has personality. Whether
       it’s a clever algorithm or an API that sings, I ensure every line of code
       I craft has its own story to tell.
     </p>
-    <p class="text-xl font-medium py-2 pr-4">
+    <p class="font-mono text-xl font-medium py-2 pr-4">
       On any given day, you can find me juggling JSON, wrestling with RESTful
       services, and having a ball with backend architecture. But it’s not all
       work and no play; I make sure there’s always time for a good laugh, a

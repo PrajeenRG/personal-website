@@ -15,9 +15,13 @@
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
     rel="stylesheet"
   />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet"
+  />
 </svelte:head>
 <header>
-  <nav class="z-50 bg-zinc-100 border-b-2 border-black">
+  <nav class="z-50 bg-white border-b-2 border-black">
     <div
       class="mx-auto w-screen min-h-16 px-4 sm:px-8 lg:px-12 flex flex-row place-content-between place-items-center"
     >
@@ -30,12 +34,14 @@
         <a href="#work">Work</a>
         <a href="/blog">Blog</a>
         <a
+          aria-label="github"
           href="https://github.com"
           class="border-2 border-black p-1 rounded transition-shadow shadow-xy-2 hover:shadow-xy-1"
         >
           <IconBrandGithub size={24} />
         </a>
         <a
+          aria-label="linkedin"
           href="https://linkedin.com"
           class="border-2 border-black p-1 rounded transition-shadow shadow-xy-2 hover:shadow-xy-1"
         >
@@ -48,7 +54,7 @@
 <slot />
 <footer>
   <div
-    class="flex flex-row w-screen min-h-8 px-4 sm:px-8 lg:px-12 bg-zinc-100 border-t-2 border-black"
+    class="flex flex-row w-screen min-h-8 px-4 sm:px-8 lg:px-12 bg-white border-t-2 border-black"
   >
     Copyright 2024, Prajeen Govardhanam
   </div>
