@@ -2,9 +2,16 @@
   import { IconBrandGoogleDrive, IconBrandGmail } from '@tabler/icons-svelte'
 </script>
 
+<svelte:head>
+  <title>Prajeen Govardhanam | Software Developer</title>
+  <meta
+    name="description"
+    content="A budding backend developer who loves to experiment with things which seem to be boundless. View the adventures through this twisty road of software development."
+  />
+</svelte:head>
 <div
   id="hero"
-  class="flex flex-col h-[90vh] w-screen bg-white place-items-center justify-center p-4 md:p-8 lg:p-12"
+  class="flex flex-col min-h-[80vh] w-screen bg-white place-items-center justify-center p-4 md:p-8 lg:p-12"
 >
   <div class="text-center py-4 md:py-6 lg:py-8">
     <h1 class="text-7xl font-bold p-2 mb-2">
@@ -26,7 +33,7 @@
     </a>
     <a
       class="rounded border-[3px] border-black shadow-xy-3 px-4 py-2 font-bold bg-red-400 transition-shadow hover:shadow-xy-1"
-      href="mailto:jdoe@example.com"
+      href="mailto:contact@prajeen.com"
     >
       <span class="flex flex-row gap-2 place-items-center justify-between">
         <IconBrandGmail size={32} />Send E-Mail

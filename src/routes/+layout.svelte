@@ -35,14 +35,14 @@
         <a href="/blog">Blog</a>
         <a
           aria-label="github"
-          href="https://github.com"
+          href="https://github.com/rg-p"
           class="border-2 border-black p-1 rounded transition-shadow shadow-xy-2 hover:shadow-xy-1"
         >
           <IconBrandGithub size={24} />
         </a>
         <a
           aria-label="linkedin"
-          href="https://linkedin.com"
+          href="https://linkedin.com/in/rg-p"
           class="border-2 border-black p-1 rounded transition-shadow shadow-xy-2 hover:shadow-xy-1"
         >
           <IconBrandLinkedin size={24} />
