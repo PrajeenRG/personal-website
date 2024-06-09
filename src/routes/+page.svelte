@@ -1,6 +1,6 @@
 <script>
   import { IconBrandGoogleDrive, IconBrandGmail } from '@tabler/icons-svelte'
-  import banner from '$lib/assets/banner.jpg'
+  import banner from '$lib/assets/banner.png'
 
   const title = 'Prajeen Govardhanam | Software Developer'
   const description =

@@ -1,10 +1,12 @@
 <script>
   import '../app.pcss'
+  import logo from '$lib/assets/logo.svg'
 
   import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-svelte'
 </script>
 
 <svelte:head>
+  <link rel="icon" href={logo} type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link
     rel="preconnect"
