@@ -1,13 +1,31 @@
 <script>
   import { IconBrandGoogleDrive, IconBrandGmail } from '@tabler/icons-svelte'
+  import banner from '$lib/assets/banner.jpg'
+
+  const title = 'Prajeen Govardhanam | Software Developer'
+  const description =
+    'A budding backend developer who loves to experiment with things which seem to be boundless. View the adventures through this twisty road of software development.'
 </script>
 
 <svelte:head>
-  <title>Prajeen Govardhanam | Software Developer</title>
-  <meta
-    name="description"
-    content="A budding backend developer who loves to experiment with things which seem to be boundless. View the adventures through this twisty road of software development."
-  />
+  <!-- HTML Meta Tags -->
+  <title>{title}</title>
+  <meta name="description" content={description} />
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://prajeen.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={banner} />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="prajeen.com" />
+  <meta property="twitter:url" content="https://prajeen.com" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={banner} />
 </svelte:head>
 <div
   id="hero"
