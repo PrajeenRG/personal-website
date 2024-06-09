@@ -1,10 +1,28 @@
 <script>
+  import ProjectCard from '$lib/components/ProjectCard.svelte'
   import { IconBrandGoogleDrive, IconBrandGmail } from '@tabler/icons-svelte'
   import banner from '$lib/assets/banner.png'
 
   const title = 'Prajeen Govardhanam | Software Developer'
   const description =
     'A budding backend developer who loves to experiment with things which seem to be boundless. View the adventures through this twisty road of software development.'
+
+  const projectData = {
+    name: 'Project',
+    languages: ['Go', 'HTML', 'CSS'],
+    shortDesc:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    links: [
+      {
+        name: 'Demo',
+        href: '/demo',
+      },
+      {
+        name: 'Visit',
+        href: '/visit',
+      },
+    ],
+  }
 </script>
 
 <svelte:head>
@@ -64,7 +82,7 @@
   class="grid w-screen grid-rows-1 grid-cols-3 gap-12 bg-white place-items-center p-6 md:p-12 lg:p-[4.5rem]"
 >
   <div class="h-full col-span-2 py-4 md:py-6 lg:py-8">
-    <h1 class="text-5xl font-bold mb-2">About Me</h1>
+    <h3 class="text-5xl font-bold mb-2">About Me</h3>
     <p class="font-mono text-xl font-medium pt-4 pb-2 pr-4">
       With over a year of industry experience and many many side projects later,
       I’ve found my groove in the backend, where the real magic happens. I’m all
@@ -90,4 +108,26 @@
     alt="Prajeen's Profile Photo"
     class="aspect-square object-center border-4 border-black rounded-xl shadow-xy-4 my-4 md:my-6 lg:my-8"
   />
+</div>
+
+<div id="projects" class="w-screen bg-white p-6 md:p-12 lg:p-[4.5rem]">
+  <h3 class="text-5xl font-bold mb-2">Projects</h3>
+  <div class="grid grid-flow-row grid-cols-3 gap-12 my-4 md:my-6 lg:my-8">
+    <ProjectCard {...projectData} />
+    <ProjectCard
+      name={'Project 2'}
+      languages={['Java']}
+      shortDesc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
+    />
+    <ProjectCard
+      name={'Project 3'}
+      languages={['Python']}
+      shortDesc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
+    />
+    <ProjectCard
+      name={'Project 4'}
+      languages={['Rust']}
+      shortDesc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
+    />
+  </div>
 </div>
