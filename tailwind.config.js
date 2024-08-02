@@ -5,8 +5,8 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     fontFamily: {
-      sans: ['Space Grotesk', ...ff.sans],
-      mono: ['Space Mono', ...ff.mono],
+      sans: ['Lexend Variable', ...ff.sans],
+      mono: ['Azeret Mono', ...ff.mono],
     },
     extend: {
       boxShadow: {

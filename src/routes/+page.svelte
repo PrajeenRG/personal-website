@@ -53,7 +53,7 @@
     <h1 class="text-7xl font-bold p-2 mb-2">
       Hey There! Step into my digital playground
     </h1>
-    <p class="text-3xl font-mono font-medium p-2 mt-2">
+    <p class="text-3xl p-2 mt-2">
       Juggling databases, APIs, and server-side scripts, I turn caffeine into
       scalable code and quirky commits.
     </p>
@@ -83,19 +83,19 @@
 >
   <div class="h-full col-span-2 py-4 md:py-6 lg:py-8">
     <h3 class="text-5xl font-bold mb-2">About Me</h3>
-    <p class="font-mono text-xl font-medium pt-4 pb-2 pr-4">
+    <p class="text-xl pt-4 pb-2 pr-4">
       With over a year of industry experience and many many side projects later,
       I’ve found my groove in the backend, where the real magic happens. I’m all
       about creating robust solutions that not only work but also bring joy to
       those who use them.
     </p>
-    <p class="font-mono text-xl font-medium py-2 pr-4">
+    <p class="text-xl py-2 pr-4">
       My passion for software is as vast as the databases I manage. I believe in
       writing code that’s not just functional but also has personality. Whether
       it’s a clever algorithm or an API that sings, I ensure every line of code
       I craft has its own story to tell.
     </p>
-    <p class="font-mono text-xl font-medium py-2 pr-4">
+    <p class="text-xl py-2 pr-4">
       On any given day, you can find me juggling JSON, wrestling with RESTful
       services, and having a ball with backend architecture. But it’s not all
       work and no play; I make sure there’s always time for a good laugh, a

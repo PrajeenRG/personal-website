@@ -38,7 +38,6 @@
     @apply border-[3px];
     @apply border-black;
     @apply shadow-xy-3;
-    @apply font-mono;
   }
 
   .name {
