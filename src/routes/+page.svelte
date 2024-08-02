@@ -69,7 +69,7 @@
     </a>
     <a
       class="rounded border-[3px] border-black shadow-xy-3 px-4 py-2 font-bold bg-red-400 transition-shadow hover:shadow-xy-1"
-      href="mailto:contact@prajeen.com"
+      href="mailto:p@prajeen.com"
     >
       <span class="flex flex-row gap-2 place-items-center justify-between">
         <IconBrandGmail size={32} />Send E-Mail
@@ -103,9 +103,9 @@
     </p>
   </div>
   <enhanced:img
-    src="/src/lib/assets/profile-picture.jpg?w=1536;960;540;384"
+    src="/src/lib/assets/profile-picture.png?w=1536;960;540;384"
     sizes="(min-width:3072px) 1536px, (min-width:1920px) 960px, (min-width:1080px) 540px, (min-width:768px) 384px"
-    alt="Prajeen's Profile Photo"
+    alt="Prajeen's Profile Picture"
     class="aspect-square object-center border-4 border-black rounded-xl shadow-xy-4 my-4 md:my-6 lg:my-8"
   />
 </div>
