@@ -47,8 +47,23 @@
 <slot />
 <footer>
   <div
-    class="flex flex-row w-screen min-h-8 px-4 sm:px-8 lg:px-12 bg-white border-t-2 border-black"
+    class="flex flex-row w-screen h-16 px-4 sm:px-8 lg:px-12 bg-white border-t-2 border-black place-items-center justify-between"
   >
-    Copyright {new Date().getFullYear()}, {name}
+    <p>Copyright {new Date().getFullYear()}, {name}. All Rights Reserved</p>
+    <div class="flex gap-2">
+      {#if socials.github}
+        <a aria-label="github" href="https://github.com/{socials.github}">
+          <IconBrandGithub size={24} />
+        </a>
+      {/if}
+      {#if socials.linkedin}
+        <a
+          aria-label="linkedin"
+          href="https://linkedin.com/in/{socials.linkedin}"
+        >
+          <IconBrandLinkedin size={24} />
+        </a>
+      {/if}
+    </div>
   </div>
 </footer>
