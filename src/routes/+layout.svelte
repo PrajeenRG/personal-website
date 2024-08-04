@@ -1,8 +1,7 @@
 <script>
   import '../app.pcss'
   import logo from '$lib/assets/logo.svg'
-
-  import { page } from '$app/stores'
+  import { name, socials } from '$lib/data.json'
 
   import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-svelte'
 </script>
@@ -16,26 +15,26 @@
       class="mx-auto w-screen min-h-16 px-4 sm:px-8 lg:px-12 flex flex-row place-content-between place-items-center"
     >
       <a href="/">
-        <p class="text-xl font-bold">Prajeen Govardhanam</p>
+        <p class="text-xl font-bold">{name}</p>
       </a>
       <div class="flex flex-row gap-6 font-semibold place-items-center">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#work">Work</a>
         <a href="/blog">Blog</a>
-        {#if $page.data.socials.github}
+        {#if socials.github}
           <a
             aria-label="github"
-            href="https://github.com/{$page.data.socials.github}"
+            href="https://github.com/{socials.github}"
             class="border-2 border-black p-1 rounded transition-shadow shadow-xy-2 hover:shadow-xy-1"
           >
             <IconBrandGithub size={24} />
           </a>
         {/if}
-        {#if $page.data.socials.linkedin}
+        {#if socials.linkedin}
           <a
             aria-label="linkedin"
-            href="https://linkedin.com/in/{$page.data.socials.linkedin}"
+            href="https://linkedin.com/in/{socials.linkedin}"
             class="border-2 border-black p-1 rounded transition-shadow shadow-xy-2 hover:shadow-xy-1"
           >
             <IconBrandLinkedin size={24} />
@@ -50,6 +49,6 @@
   <div
     class="flex flex-row w-screen min-h-8 px-4 sm:px-8 lg:px-12 bg-white border-t-2 border-black"
   >
-    Copyright 2024, Prajeen Govardhanam
+    Copyright {new Date().getFullYear()}, {name}
   </div>
 </footer>

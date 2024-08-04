@@ -2,9 +2,7 @@
   import ProjectCard from '$lib/components/ProjectCard.svelte'
   import { IconBrandGoogleDrive, IconBrandGmail } from '@tabler/icons-svelte'
   import banner from '$lib/assets/banner.png'
-
-  /** @type {import('./$types').PageServerData} */
-  export let data
+  import data from '$lib/data.json'
 </script>
 
 <svelte:head>
