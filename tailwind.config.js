@@ -1,18 +1,22 @@
-/** @type {import('tailwindcss').Config}*/
-import { fontFamily as ff } from 'tailwindcss/defaultTheme';
+import { fontFamily as ff } from 'tailwindcss/defaultTheme'
 
-const config = {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
-
-	theme: {
-		extend: {},
-		fontFamily: {
-			sans: ['Jost Variable', 'Jost', ...ff.sans],
-			mono: ['DM Mono', ...ff.mono]
-		}
-	},
-
-	plugins: []
-};
-
-export default config;
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./src/**/*.{html,js,svelte,ts}'],
+  theme: {
+    fontFamily: {
+      sans: ['Lexend Variable', ...ff.sans],
+      mono: ['Azeret Mono', ...ff.mono],
+    },
+    extend: {
+      boxShadow: {
+        'xy-1': '1px 1.5px',
+        'xy-2': '2px 3px',
+        'xy-3': '3px 4.5px',
+        'xy-4': '4px 6px',
+        'xy-8': '8px 12px',
+      },
+    },
+  },
+  plugins: [],
+}

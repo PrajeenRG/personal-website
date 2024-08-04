@@ -1,10 +1,14 @@
-<script lang="js">
-	import { page } from '$app/stores';
+<script>
+  import { page } from '$app/stores'
+  import { name } from '$lib/data.json'
 </script>
 
-<div
-	class="flex h-[98vh] w-screen flex-col place-items-center justify-center bg-white dark:bg-stone-900"
->
-	<p class="text-5xl font-bold text-black md:text-8xl dark:text-stone-100">{$page.status}</p>
-	<p class="text-lg text-black md:text-2xl dark:text-stone-300">{$page.error?.message}</p>
+<svelte:head>
+  <title>{name} | {$page.status} {$page.error?.message}</title>
+</svelte:head>
+<div class="min-h-[88vh] grid place-items-center">
+  <div class="flex flex-col gap-3 place-items-center">
+    <h1 class="font-bold text-5xl">Error {$page.status}</h1>
+    <p class="text-xl">{$page.error?.message}</p>
+  </div>
 </div>
