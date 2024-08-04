@@ -11,6 +11,7 @@
    * @typedef {Object} Link
    * @property {string} name
    * @property {string} href
+   * @property {boolean} insecure
    */
   /** @type Link[] | undefined
    */
@@ -28,7 +29,10 @@
   {#if links && links.length > 0}
     <div class="link-container">
       {#each links as link}
-        <a class="link" href={link.href}>
+        <a
+          class="link"
+          href={`${link.insecure ? 'http' : 'https'}://${link.href}`}
+        >
           <span class="flex flex-row place-items-center">
             {link.name}
             <IconArrowUpRight />

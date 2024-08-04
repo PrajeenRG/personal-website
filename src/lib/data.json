@@ -26,7 +26,7 @@
       "links": [
         {
           "name": "Source",
-          "href": "https: //github.com/AttoLeap/objekt"
+          "href": "github.com/AttoLeap/objekt"
         }
       ]
     },
@@ -37,7 +37,7 @@
       "links": [
         {
           "name": "Source",
-          "href": "https: //github.com/PrajeenRG/spawn"
+          "href": "github.com/PrajeenRG/spawn"
         }
       ]
     },
@@ -48,11 +48,11 @@
       "links": [
         {
           "name": "Source",
-          "href": "https: //github.com/PrajeenRG/vanity"
+          "href": "github.com/PrajeenRG/vanity"
         },
         {
           "name": "Demo",
-          "href": "https: //go.prajeen.com"
+          "href": "go.prajeen.com"
         }
       ]
     },
@@ -63,7 +63,7 @@
       "links": [
         {
           "name": "Source",
-          "href": "https: //github.com/PrajeenRG/automatic-highlights-generator"
+          "href": "github.com/PrajeenRG/automatic-highlights-generator"
         }
       ]
     },
@@ -74,7 +74,7 @@
       "links": [
         {
           "name": "Source",
-          "href": "https: //github.com/PrajeenRG/Cipher-Encryption-Project"
+          "href": "github.com/PrajeenRG/Cipher-Encryption-Project"
         }
       ]
     }
