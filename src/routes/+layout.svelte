@@ -2,6 +2,8 @@
   import '../app.pcss'
   import logo from '$lib/assets/logo.svg'
 
+  import { page } from '$app/stores'
+
   import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-svelte'
 </script>
 
@@ -21,20 +23,24 @@
         <a href="#projects">Projects</a>
         <a href="#work">Work</a>
         <a href="/blog">Blog</a>
-        <a
-          aria-label="github"
-          href="https://github.com/PrajeenRG"
-          class="border-2 border-black p-1 rounded transition-shadow shadow-xy-2 hover:shadow-xy-1"
-        >
-          <IconBrandGithub size={24} />
-        </a>
-        <a
-          aria-label="linkedin"
-          href="https://linkedin.com/in/PrajeenRG"
-          class="border-2 border-black p-1 rounded transition-shadow shadow-xy-2 hover:shadow-xy-1"
-        >
-          <IconBrandLinkedin size={24} />
-        </a>
+        {#if $page.data.socials.github}
+          <a
+            aria-label="github"
+            href="https://github.com/{$page.data.socials.github}"
+            class="border-2 border-black p-1 rounded transition-shadow shadow-xy-2 hover:shadow-xy-1"
+          >
+            <IconBrandGithub size={24} />
+          </a>
+        {/if}
+        {#if $page.data.socials.linkedin}
+          <a
+            aria-label="linkedin"
+            href="https://linkedin.com/in/{$page.data.socials.linkedin}"
+            class="border-2 border-black p-1 rounded transition-shadow shadow-xy-2 hover:shadow-xy-1"
+          >
+            <IconBrandLinkedin size={24} />
+          </a>
+        {/if}
       </div>
     </div>
   </nav>

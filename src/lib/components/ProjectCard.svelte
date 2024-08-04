@@ -2,20 +2,30 @@
   import { IconArrowUpRight } from '@tabler/icons-svelte'
 
   export let name = ''
+  /**
+   * @type string[] | undefined
+   */
   export let languages = []
   export let shortDesc = ''
+  /**
+   * @typedef {Object} Link
+   * @property {string} name
+   * @property {string} href
+   */
+  /** @type Link[] | undefined
+   */
   export let links = []
 </script>
 
 <div class="card p-1 md:p-2 lg:p-4">
   <div class="mb-1">
     <h5 class="name">{name}</h5>
-    {#if languages.length > 0}
+    {#if languages && languages.length > 0}
       <p class="language">{languages.join(', ')}</p>
     {/if}
   </div>
   <p>{shortDesc}</p>
-  {#if links.length > 0}
+  {#if links && links.length > 0}
     <div class="link-container">
       {#each links as link}
         <a class="link" href={link.href}>

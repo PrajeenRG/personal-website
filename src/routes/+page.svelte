@@ -3,46 +3,28 @@
   import { IconBrandGoogleDrive, IconBrandGmail } from '@tabler/icons-svelte'
   import banner from '$lib/assets/banner.png'
 
-  const title = 'Prajeen Govardhanam | Software Developer'
-  const description =
-    'A budding backend developer who loves to experiment with things which seem to be boundless. View the adventures through this twisty road of software development.'
-
-  const projectData = {
-    name: 'Project',
-    languages: ['Go', 'HTML', 'CSS'],
-    shortDesc:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    links: [
-      {
-        name: 'Demo',
-        href: '/demo',
-      },
-      {
-        name: 'Visit',
-        href: '/visit',
-      },
-    ],
-  }
+  /** @type {import('./$types').PageServerData} */
+  export let data
 </script>
 
 <svelte:head>
   <!-- HTML Meta Tags -->
-  <title>{title}</title>
-  <meta name="description" content={description} />
+  <title>{data.title}</title>
+  <meta name="description" content={data.description} />
 
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://prajeen.com" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content={title} />
-  <meta property="og:description" content={description} />
+  <meta property="og:title" content={data.title} />
+  <meta property="og:description" content={data.description} />
   <meta property="og:image" content={banner} />
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta property="twitter:domain" content="prajeen.com" />
   <meta property="twitter:url" content="https://prajeen.com" />
-  <meta name="twitter:title" content={title} />
-  <meta name="twitter:description" content={description} />
+  <meta name="twitter:title" content={data.title} />
+  <meta name="twitter:description" content={data.description} />
   <meta name="twitter:image" content={banner} />
 </svelte:head>
 <div
@@ -50,13 +32,8 @@
   class="flex flex-col min-h-[80vh] w-screen bg-white place-items-center justify-center p-4 md:p-8 lg:p-12"
 >
   <div class="text-center py-4 md:py-6 lg:py-8">
-    <h1 class="text-7xl font-bold p-2 mb-2">
-      Hey There! Step into my digital playground
-    </h1>
-    <p class="text-3xl p-2 mt-2">
-      Juggling databases, APIs, and server-side scripts, I turn caffeine into
-      scalable code and quirky commits.
-    </p>
+    <h1 class="text-7xl font-bold p-2 mb-2">{data.hero.main}</h1>
+    <p class="text-3xl p-2 mt-2">{data.hero.sub}</p>
   </div>
   <div class="flex flex-row gap-6 text-center text-lg">
     <a
@@ -69,7 +46,7 @@
     </a>
     <a
       class="rounded border-[3px] border-black shadow-xy-3 px-4 py-2 font-bold bg-red-400 transition-shadow hover:shadow-xy-1"
-      href="mailto:p@prajeen.com"
+      href="mailto:{data.socials.email}"
     >
       <span class="flex flex-row gap-2 place-items-center justify-between">
         <IconBrandGmail size={32} />Send E-Mail
@@ -82,25 +59,10 @@
   class="grid w-screen grid-rows-1 grid-cols-3 gap-12 bg-white place-items-center p-6 md:p-12 lg:p-[4.5rem]"
 >
   <div class="h-full col-span-2 py-4 md:py-6 lg:py-8">
-    <h3 class="text-5xl font-bold mb-2">About Me</h3>
-    <p class="text-xl pt-4 pb-2 pr-4">
-      With over a year of industry experience and many many side projects later,
-      I’ve found my groove in the backend, where the real magic happens. I’m all
-      about creating robust solutions that not only work but also bring joy to
-      those who use them.
-    </p>
-    <p class="text-xl py-2 pr-4">
-      My passion for software is as vast as the databases I manage. I believe in
-      writing code that’s not just functional but also has personality. Whether
-      it’s a clever algorithm or an API that sings, I ensure every line of code
-      I craft has its own story to tell.
-    </p>
-    <p class="text-xl py-2 pr-4">
-      On any given day, you can find me juggling JSON, wrestling with RESTful
-      services, and having a ball with backend architecture. But it’s not all
-      work and no play; I make sure there’s always time for a good laugh, a
-      quirky commit, or a spontaneous brainstorming session with my rubber duck.
-    </p>
+    <h3 class="text-5xl font-bold mb-4">About Me</h3>
+    {#each data.about.paragraphs as para}
+      <p class="text-xl py-2 pr-4">{para}</p>
+    {/each}
   </div>
   <enhanced:img
     src="/src/lib/assets/profile-picture.png?w=1536;960;540;384"
@@ -113,21 +75,8 @@
 <div id="projects" class="w-screen bg-white p-6 md:p-12 lg:p-[4.5rem]">
   <h3 class="text-5xl font-bold mb-2">Projects</h3>
   <div class="grid grid-flow-row grid-cols-3 gap-12 my-4 md:my-6 lg:my-8">
-    <ProjectCard {...projectData} />
-    <ProjectCard
-      name={'Project 2'}
-      languages={['Java']}
-      shortDesc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-    />
-    <ProjectCard
-      name={'Project 3'}
-      languages={['Python']}
-      shortDesc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-    />
-    <ProjectCard
-      name={'Project 4'}
-      languages={['Rust']}
-      shortDesc={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-    />
+    {#each data.projects as project}
+      <ProjectCard {...project} />
+    {/each}
   </div>
 </div>

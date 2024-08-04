@@ -1,0 +1,91 @@
+/** @type {import('./$types').PageServerLoad} */
+export function load() {
+  return {
+    name: 'Prajeen Govardhanam',
+    title: 'Prajeen Govardhanam | Software Developer',
+    description:
+      'A budding backend developer who loves to experiment with things which seem to be boundless. View the adventures through this twisty road of software development.',
+    hero: {
+      main: 'Hey There! Step into my digital playground',
+      sub: 'Juggling databases, APIs, and server-side scripts, I turn caffeine into scalable code and quirky commits.',
+    },
+    socials: {
+      email: 'p@prajeen.com',
+      linkedin: 'PrajeenRG',
+      github: 'PrajeenRG',
+    },
+    about: {
+      paragraphs: [
+        'With over a year of industry experience and many many side projects later, I’ve found my groove in the backend, where the real magic happens. I’m all about creating robust solutions that not only work but also bring joy to those who use them.',
+        'My passion for software is as vast as the databases I manage. I believe in writing code that’s not just functional but also has personality. Whether it’s a clever algorithm or an API that sings, I ensure every line of code I craft has its own story to tell.',
+        'On any given day, you can find me juggling JSON, wrestling with RESTful services, and having a ball with backend architecture. But it’s not all work and no play; I make sure there’s always time for a good laugh, a quirky commit, or a spontaneous brainstorming session with my rubber duck.',
+      ],
+    },
+    projects: [
+      {
+        name: 'Objekt',
+        languages: ['Go', 'Postgres', 'Object Storage'],
+        shortDesc:
+          'A facade service to extrapolate the features offered by various cloud vendors and make storage system vendor agnostic by facilitating multi-cloud like ecosystem',
+        links: [
+          {
+            name: 'Source',
+            href: 'https://github.com/AttoLeap/objekt',
+          },
+        ],
+      },
+      {
+        name: 'Spawn',
+        languages: ['Go'],
+        shortDesc:
+          'A CLI tool to assist in generating valid test files for the usage in a system that processes/stores files like images, text and gifs',
+        links: [
+          {
+            name: 'Source',
+            href: 'https://github.com/PrajeenRG/spawn',
+          },
+        ],
+      },
+      {
+        name: 'Vanity',
+        languages: ['Go', 'Templ'],
+        shortDesc:
+          'A tool to help generate a HTML site that can be hosted at the vanity domain to facilitate vanity imports in GoLang',
+        links: [
+          {
+            name: 'Source',
+            href: 'https://github.com/PrajeenRG/vanity',
+          },
+          {
+            name: 'Demo',
+            href: 'https://go.prajeen.com',
+          },
+        ],
+      },
+      {
+        name: 'Automatic Highlights Generator',
+        languages: ['Python', 'SciPy', 'Speech Processing'],
+        shortDesc:
+          'A highlights generator based on commentators speech processing to extract data on excitement levels to seggregate major events and transform them into a smooth highlights of a sports',
+        links: [
+          {
+            name: 'Source',
+            href: 'https://github.com/PrajeenRG/automatic-highlights-generator',
+          },
+        ],
+      },
+      {
+        name: 'Cipher Encryption Project',
+        languages: ['C++', 'CMake'],
+        shortDesc:
+          'A TUI tool that enables users to encrypt and decrypt various data formats using 9 types of ciphers implemented from scratch. Cross-system support is also present with the help of MinGW and CMake',
+        links: [
+          {
+            name: 'Source',
+            href: 'https://github.com/PrajeenRG/Cipher-Encryption-Project',
+          },
+        ],
+      },
+    ],
+  }
+}
