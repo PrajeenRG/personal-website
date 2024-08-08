@@ -19,7 +19,9 @@
       <a href="/">
         <p class="text-xl font-bold">{name}</p>
       </a>
-      <div class="flex flex-row gap-6 font-semibold place-items-center">
+      <div
+        class="hidden md:flex flex-row gap-6 font-semibold place-items-center"
+      >
         <a href="/#about">About</a>
         <a href="/#projects">Projects</a>
         <a href="/#work">Work</a>
@@ -51,9 +53,9 @@
   class="bg-white dark:bg-zinc-800 border-t-2 border-black dark:border-zinc-100 dark:text-zinc-100 xl:px-[5%] 2xl:px-[10%]"
 >
   <div
-    class="flex flex-row w-full mx-auto h-16 px-4 sm:px-8 lg:px-12 place-items-center justify-between"
+    class="flex max-md:flex-col w-full mx-auto h-16 px-4 sm:px-8 lg:px-12 place-items-center justify-between"
   >
-    <p>Copyright {new Date().getFullYear()}, {name}. All Rights Reserved</p>
+    <p>&copy; 2023, {name}. All Rights Reserved</p>
     <div class="flex gap-2">
       {#if socials.github}
         <a aria-label="github" href="https://github.com/{socials.github}">

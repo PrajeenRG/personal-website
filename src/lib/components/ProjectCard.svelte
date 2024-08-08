@@ -19,7 +19,7 @@
 </script>
 
 <div
-  class="flex flex-col rounded-lg gap-2 bg-yellow-300 dark:bg-yellow-700 border-[3px] border-black dark:border-zinc-100 shadow-xy-4 p-1 md:p-2 lg:p-4"
+  class="flex flex-col rounded-lg gap-2 bg-yellow-300 dark:bg-yellow-700 border-[3px] border-black dark:border-zinc-100 shadow-xy-4 p-4 lg:p-6"
 >
   <div class="mb-1">
     <h5 class="font-bold text-2xl mb-1">{name}</h5>
@@ -32,7 +32,7 @@
     <div class="flex mb-1 mt-3 gap-2">
       {#each links as link}
         <a
-          class="p-2 rounded-md border-2 border-black dark:border-zinc-100 uppercase hover:bg-black hover:text-white hover:transition-colors dark:hover:text-black dark:hover:bg-zinc-100"
+          class="p-2 rounded-md border-2 border-black dark:border-zinc-100 uppercase hover:bg-black hover:text-yellow-300 hover:transition-colors dark:hover:text-yellow-700 dark:hover:bg-zinc-100"
           href={`${link.insecure ? 'http' : 'https'}://${link.href}`}
         >
           <span class="flex flex-row place-items-center">
