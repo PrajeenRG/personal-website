@@ -26,7 +26,7 @@
   <meta name="twitter:image" content={banner} />
 </svelte:head>
 <article
-  class="w-screen 2xl:w-[80%] mx-auto bg-white dark:bg-zinc-800 dark:border-zinc-100 dark:text-zinc-100"
+  class="w-screen xl:px-[5%] 2xl:px-[10%] mx-auto bg-white dark:bg-zinc-800 dark:border-zinc-100 dark:text-zinc-100"
 >
   <div
     id="hero"

@@ -9,12 +9,12 @@
 <svelte:head>
   <link rel="icon" href={logo} type="image/svg+xml" />
 </svelte:head>
-<header>
-  <nav
-    class="z-50 bg-white dark:bg-zinc-800 border-b-2 border-black dark:border-zinc-100 dark:text-zinc-100"
-  >
+<header
+  class="z-50 bg-white dark:bg-zinc-800 w-full xl:px-[5%] 2xl:px-[10%] border-b-2 border-black dark:border-zinc-100"
+>
+  <nav class="dark:text-zinc-100">
     <div
-      class="mx-auto w-screen 2xl:w-[80%] min-h-16 px-4 sm:px-8 lg:px-12 flex flex-row place-content-between place-items-center"
+      class="mx-auto min-h-16 px-4 sm:px-8 lg:px-12 flex flex-row place-content-between place-items-center"
     >
       <a href="/">
         <p class="text-xl font-bold">{name}</p>
@@ -48,10 +48,10 @@
 </header>
 <slot />
 <footer
-  class="bg-white dark:bg-zinc-800 border-t-2 border-black dark:border-zinc-100 dark:text-zinc-100"
+  class="bg-white dark:bg-zinc-800 border-t-2 border-black dark:border-zinc-100 dark:text-zinc-100 xl:px-[5%] 2xl:px-[10%]"
 >
   <div
-    class="flex flex-row w-screen 2xl:w-[80%] mx-auto h-16 px-4 sm:px-8 lg:px-12 place-items-center justify-between"
+    class="flex flex-row w-full mx-auto h-16 px-4 sm:px-8 lg:px-12 place-items-center justify-between"
   >
     <p>Copyright {new Date().getFullYear()}, {name}. All Rights Reserved</p>
     <div class="flex gap-2">
