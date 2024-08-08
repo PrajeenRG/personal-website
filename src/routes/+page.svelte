@@ -38,7 +38,7 @@
     </div>
     <div class="flex flex-row gap-6 text-center text-lg">
       <a
-        class="rounded border-[3px] shadow-xy-3 px-4 py-2 font-bold bg-yellow-400 dark:bg-yellow-700 transition-shadow hover:shadow-xy-1"
+        class="rounded border-[3px] border-black dark:border-zinc-100 shadow-xy-3 px-4 py-2 font-bold bg-yellow-400 dark:bg-yellow-700 transition-shadow hover:shadow-xy-1"
         href={data.resume_link}
         target="_blank"
         rel="noopener noreferrer"
@@ -48,7 +48,7 @@
         </span>
       </a>
       <a
-        class="rounded border-[3px] shadow-xy-3 px-4 py-2 font-bold bg-red-400 dark:bg-red-700 transition-shadow hover:shadow-xy-1"
+        class="rounded border-[3px] border-black dark:border-zinc-100 shadow-xy-3 px-4 py-2 font-bold bg-red-400 dark:bg-red-700 transition-shadow hover:shadow-xy-1"
         href="mailto:{data.socials.email}"
       >
         <span class="flex flex-row gap-2 place-items-center justify-between">
@@ -71,7 +71,7 @@
       src="/src/lib/assets/profile-picture.png?w=1536;960;540;384"
       sizes="(min-width:3072px) 1536px, (min-width:1920px) 960px, (min-width:1080px) 540px, (min-width:768px) 384px"
       alt="Prajeen's Profile Picture"
-      class="aspect-square object-center border-4 rounded-xl shadow-xy-4 my-4 md:my-6 lg:my-8"
+      class="aspect-square object-center border-4 border-black dark:border-zinc-100 rounded-xl shadow-xy-4 my-4 md:my-6 lg:my-8"
     />
   </div>
 
